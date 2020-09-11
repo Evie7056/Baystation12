@@ -69,7 +69,7 @@ datum/preferences
 				pref.real_name = new_name
 				return TOPIC_REFRESH
 			else
-				to_chat(user, "<span class='warning'>Имя должно быть от 2 до [MAX_NAME_LEN] символов длиной. Оно может содержать только символы A-Z, a-z, А-Я, а-я и '.</span>")
+				to_chat(user, "<span class='warning'>Имя должно быть от 2 до [MAX_NAME_LEN] символов длиной. Оно может содержать только символы A-Z, a-z, и '.</span>")
 				return TOPIC_NOACTION
 
 	else if(href_list["random_name"])
